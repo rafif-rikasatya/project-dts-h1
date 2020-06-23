@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 150px;
+  height : 60px;
+  margin : 5px;
+}
+header {
+  height: 71px;
+  width: 100%;
+  background-color: #ff420e;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+}
+
+.btn-header {
+  display: none;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 71px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-weight:bold;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+slider {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-color:#f7f7f7;
+    overflow: hidden;
+    position: relative;
+}
+
+slider>* {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(https://www.demilked.com/magazine/wp-content/uploads/2015/10/nature-travel-kayak-photography-fjords-tomasz-furmanek-norway7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(https://travelwirenews.com/wp-content/uploads/2019/08/original_open-uri20190814-20944-xfu47q);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(https://images.unsplash.com/photo-1470608756445-2c9906b0680f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4) {
+    animation-delay: 8s;
+    background-image: url(https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190417155654/why-do-we-travel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide h1 {
+    display: inline-block;
+    color: #fff;
+    width: 40%;
+    text-align: left;
+    margin-top:355px;
+    font-size: 40px;
+    font-weight: lighter;
+    background:#f98866;
+    opacity:0.7;
+    font-weight: bold;
+}
+   
+@keyframes slide {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+    5% {
+        left: 0%
+    }
+    25% {
+        left: 0%;
+    }
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+    50% {
+        left: -100%;
+        width: 0%;
+    }
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  height : 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.tourist-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading-bottom {
+  padding-top: 80px;
+  padding-bottom: 15px;
+  color: #5f5d60;
+  text-align:center;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-size:30px;
+  border-bottom: 2px solid #5f5d60;
+  border-width: 50%;
+}
+
+.heading-bottom h2 {
+  font-weight: normal;
+  font-size:30px;
+  border-bottom: 2px solid #5f5d60;
+  border-width: 50%;
+}
+
+
+.tourist {
+  float: left;
+  width: 25%;
+}
+
+.tourist-icon {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
+.gambar:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  cursor:pointer;
+  filter:grayscale(0);
+}
+
+.tourist-icon a {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  text-align:center;
+ }
+
+.tourist-icon:hover {
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom:30px;
+  font-size: 15px;
+  color: #5f5d60;
+  font-weight:bold;
+}
+
+img.gambar {
+  width:250px;
+  height:250px;
+  transition: transform .2s;
+  filter:grayscale(1);
+}
+
+
+.bottom-wrapper {
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+}
+
+.contact-form {
+  padding-bottom: 8px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #dee7ab;
+  text-align: center;
+  float : left;
+  width:100%;
+}
+
+.contact-form h4 {
+  font-weight: normal;
+  font-size:20px;
+}
+
+input, textarea {
+  width:100%;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(249,136,102, 1);
+  
+}
+footer img{
+  width:100px;
+  float:left;
+  margin:5px;
+  
+}
+.footer_copyright h3 {
+  float:right;
+  margin:15px;
+  color:white;
+}
